@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+    p List of users with linking code #[code #{code}]:
+    ul
+        each element in users
+            li= element
+
+    a(href="/admin") Return to admin panel
