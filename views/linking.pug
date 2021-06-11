@@ -2,9 +2,13 @@ extends layout
 
 block content
     h1= title
-    p Please type the linking code you received below to finish authentication.
+    p Current link code: #[code #{currentLink}]
+    p If you wish to change the link code, please submit it in the form below.
     p(style='color:red;')= error
     form(action='/add', method='POST')
         label(for=code) Invite Code:
         input(type='text', name='code', value='')
+        input(type='hidden', name='_csrf', value=csrfToken)
         input(type='submit', value='Submit')
+    if admin
+        p #[a(href="/admin") View the admin dashboard ]

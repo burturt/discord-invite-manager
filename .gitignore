@@ -2,7 +2,7 @@
 data
 node_modules
 .DS_Store+
-/sessions.db
+sessions.db
 
 # Created by https://www.toptal.com/developers/gitignore/api/webstorm
 # Edit at https://www.toptal.com/developers/gitignore?templates=webstorm

@@ -1,13 +1,13 @@
 extends layout
 
 block content
-    h1= title
+    h1= "Admin Panel"
     p(style='color: red;')= error
-    p Admin panel.
     form(action='/admin/list', method='POST')
         h4 List users by linking code
         label(for="code") Linking code
         input(type='text', name='code', value='')
+        input(type='hidden', name='_csrf', value=csrfToken)
         input(type='submit', value='Submit')
     form(action='/admin/add', method='POST')
         h4 Add a single user by Server ID and User ID
@@ -15,6 +15,7 @@ block content
         input(type='text', name='discordId', value='')
         label(for="code") Discord server ID
         input(type='text', name='guildId', value='')
+        input(type='hidden', name='_csrf', value=csrfToken)
         input(type='submit', value='Submit')
     form(action='/admin/massadd', method='POST')
         h4 Add all users with specific linking code to specified server ID
@@ -22,4 +23,6 @@ block content
         input(type='text', name='code', value='')
         label(for="code") Discord server ID
         input(type='text', name='guildId', value='')
+        input(type='hidden', name='_csrf', value=csrfToken)
         input(type='submit', value='Submit')
+    block response
