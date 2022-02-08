@@ -15,7 +15,7 @@
     "express-session-sqlite": "^2.0.10",
     "express-validator": "^6.11.1",
     "node-fetch": "^3.1.1",
-    "nodemon": "^2.0.7",
+    "nodemon": "^2.0.15",
     "passport": "^0.4.1",
     "passport-discord": "^0.1.4",
     "passport-oauth2-refresh": "^2.0.2",
