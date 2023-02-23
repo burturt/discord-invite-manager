@@ -20,7 +20,7 @@
     "passport-discord": "^0.1.4",
     "passport-oauth2-refresh": "^2.0.2",
     "pug": "^3.0.1",
-    "sequelize": "^6.6.2",
+    "sequelize": "^6.28.2",
     "sqlite3": "npm:@vscode/sqlite3@^5.0.7"
   },
   "devDependencies": {
